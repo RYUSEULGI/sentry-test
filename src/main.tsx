@@ -9,8 +9,7 @@ Sentry.init({
   dsn:
     'https://70efff0840a74791a4bfa3550eb76e4f@o4504684012961792.ingest.sentry.io/4504684014338048',
   integrations: [new BrowserTracing()],
-  environment:
-    import.meta.env.MODE === 'development' ? 'develop' : 'production',
+  environment: 'develop',
   release: 'test-project@1.0',
 
   // Set tracesSampleRate to 1.0 to capture 100%
